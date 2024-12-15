@@ -17,30 +17,6 @@ body {
     top: 0;
     z-index: 1000;
 }
-/* Hamburger Menu */
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    color: #27414e;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #27414e;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-/* Hide menu by default for small screens */
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -65,7 +41,7 @@ body {
     }
 
     .hamburger {
-        display: block;
+   display: block;
     }
 
     .search-bar {
@@ -78,6 +54,14 @@ body {
     gap: 10px;
     font-weight: bold;
     font-size: 1.2em;
+    color: #27414e;
+}
+    .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
     color: #27414e;
 }
 
