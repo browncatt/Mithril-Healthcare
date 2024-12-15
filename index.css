@@ -1,0 +1,150 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f9fc;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(to right, #6ad0f1, #ffffff); /* Gradient background */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #27414e; /* Dark Blue */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #27414e; /* Dark Blue */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #05bbfb; /* Bright Blue */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid rgba(39, 65, 78, 0.5); /* Slight border */
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-bar button {
+    background: #05bbfb; /* Bright Blue */
+    border: none;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #23556a; /* Darker shade */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #6ad0f1, #ffffff);
+    padding: 100px 50px;
+}
+
+.hero .content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background: #27414e;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #23556a;
+}
+
+.hero img {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+/* Service Selection */
+.service-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 50px;
+    background: #ffffff;
+}
+
+.service-selection select {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+/* Footer */
+footer {
+    background: #27414e; /* Dark Accent */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #6ad0f1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #05bbfb;
+}
