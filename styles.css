@@ -11,21 +11,20 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-    background: linear-gradient(to right, #6ad0f1, #ffffff); /* Gradient background */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background: linear-gradient(to right, #6ad0f1, #ffffff);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* Logo */
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
     font-weight: bold;
     font-size: 1.2em;
-    color: #27414e; /* Dark Blue */
+    color: #27414e;
 }
 
 .nav-links {
@@ -36,16 +35,15 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #27414e; /* Dark Blue */
+    color: #27414e;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #05bbfb; /* Bright Blue */
+    color: #05bbfb;
 }
 
-/* Search Bar */
 .search-bar {
     display: flex;
     align-items: center;
@@ -54,13 +52,13 @@ body {
 
 .search-bar input {
     padding: 5px 10px;
-    border: 1px solid rgba(39, 65, 78, 0.5); /* Slight border */
+    border: 1px solid rgba(39, 65, 78, 0.5);
     border-radius: 20px;
     outline: none;
 }
 
 .search-bar button {
-    background: #05bbfb; /* Bright Blue */
+    background: #05bbfb;
     border: none;
     color: #ffffff;
     padding: 5px 15px;
@@ -70,7 +68,7 @@ body {
 }
 
 .search-bar button:hover {
-    background: #23556a; /* Darker shade */
+    background: #23556a;
 }
 
 /* Hero Section */
@@ -133,7 +131,7 @@ body {
 
 /* Footer */
 footer {
-    background: #27414e; /* Dark Accent */
+    background: #27414e;
     color: #ffffff;
     text-align: center;
     padding: 20px;
@@ -148,3 +146,78 @@ footer a {
 footer a:hover {
     color: #05bbfb;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero .content {
+        max-width: 100%;
+    }
+
+    .hero img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .service-selection {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .search-bar input {
+        width: 70%;
+    }
+
+    .search-bar button {
+        padding: 5px 10px;
+    }
+
+    .footer {
+        font-size: 0.8em;
+    }
+}
+
