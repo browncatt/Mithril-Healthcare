@@ -11,20 +11,21 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-    background: linear-gradient(to right, #6ad0f1, #ffffff);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #6ad0f1, #ffffff); /* Gradient background */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
     font-weight: bold;
     font-size: 1.2em;
-    color: #27414e;
+    color: #27414e; /* Dark Blue */
 }
 
 .nav-links {
@@ -35,15 +36,16 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #27414e;
+    color: #27414e; /* Dark Blue */
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #05bbfb;
+    color: #05bbfb; /* Bright Blue */
 }
 
+/* Search Bar */
 .search-bar {
     display: flex;
     align-items: center;
@@ -52,13 +54,13 @@ body {
 
 .search-bar input {
     padding: 5px 10px;
-    border: 1px solid rgba(39, 65, 78, 0.5);
+    border: 1px solid rgba(39, 65, 78, 0.5); /* Slight border */
     border-radius: 20px;
     outline: none;
 }
 
 .search-bar button {
-    background: #05bbfb;
+    background: #05bbfb; /* Bright Blue */
     border: none;
     color: #ffffff;
     padding: 5px 15px;
@@ -68,48 +70,10 @@ body {
 }
 
 .search-bar button:hover {
-    background: #23556a;
+    background: #23556a; /* Darker shade */
 }
 
-/* Hamburger Menu */
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    color: #27414e;
-}
-
-/* Hide menu for small screens */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        background: #ffffff;
-        position: absolute;
-        top: 60px;
-        right: 30px;
-        padding: 10px 20px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .search-bar {
-        margin-top: 10px;
-    }
-}
-
-/* Responsive Hero Section */
+/* Hero Section */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -124,10 +88,26 @@ body {
 
 .hero h1 {
     font-size: 3em;
+    margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background: #27414e;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #23556a;
 }
 
 .hero img {
@@ -135,20 +115,39 @@ body {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 50px 20px;
-    }
-
-    .hero .content {
-        max-width: 100%;
-    }
-
-    .hero img {
-        max-width: 80%;
-    }
+/* Service Selection */
+.service-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 50px;
+    background: #ffffff;
 }
+
+.service-selection select {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+/* Footer */
+footer {
+    background: #27414e; /* Dark Accent */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #6ad0f1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #05bbfb;
+}
+
 
 
