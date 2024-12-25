@@ -1,9 +1,6 @@
+// JavaScript for future interactivity or dynamic features
 document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+    console.log('Page Loaded Successfully');
 });
+
 
